@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/scroll/scroll"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+    },
+  "sitemapLocation": "sitemap.json"
+}
