@@ -1,0 +1,50 @@
+
+
+/* pages/scroll/scroll.wxss */
+scroll-view{
+  height: 100%;
+}
+.zimu{
+  background: #f2f4f5;
+  padding: 0 20rpx;
+}
+.item{
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 25rpx;
+  border-bottom: 1px solid #dbdbdb;
+}
+.item:last-of-type{
+  border: none;
+}
+
+
+.r{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10rpx;
+  width: 40rpx;
+  font-size: 30rpx;
+}
+.r view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.on{
+  color: red;
+}
+
+.show{
+  position: fixed;
+  right: 20%;
+  background: #eee;
+  width: 70rpx;
+  font-size: 50rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,16 @@
+
+<scroll-view scroll-y scroll-into-view='{{scroll}}' class='l' bindscroll='scroll'>
+  <view class='items' wx:for='{{list}}' wx:key='{{index}}' id='{{item.alphabet}}'>
+    <view class='zimu'>{{item.alphabet}}</view>
+    <view class='item' wx:for='{{item.datas}}' wx:key='{{index}}'>
+      <!-- <image></image> -->
+      <text>{{item}}</text>
+    </view>
+  </view>
+</scroll-view>
+
+<view class='r navs' bindtap='select' bindtouchmove='move' bindtouchend='end' style='{{isShow?"background:#eee":""}}'>
+  <view wx:for='{{list}}' wx:key='{{index}}' class='nav {{idx==index?"on":""}}' id='{{item.alphabet}}{{item.alphabet}}'>{{item.alphabet}}</view>
+</view>
+
+<view class='show' wx:if='{{isShow}}' style='top:{{tt}}px'>{{scroll}}</view>
